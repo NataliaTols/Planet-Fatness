@@ -1,0 +1,377 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin-left: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #212121;
+    font-size: 18px;
+    background-color: #fff;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+p {
+    color: rgb(7, 213, 236);
+}
+header {
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #ffc107;
+}
+
+nav {
+    padding: 0;
+    background-color: rgba(37, 123, 199, 0.3);
+}
+.page-nav {
+    display: flex;
+    gap: 16px;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-radius: 4px;
+}
+.logo img {
+    height: 60px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+    background-color: #e0e0e0;
+    background-image: linear-gradient(to right, #82d1f6, #fcfcfc);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.page-title {
+    color: #f44336;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.333;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px #212121;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.section-title {
+    color: #3f51b5;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.333;
+    letter-spacing: 1px;
+}
+
+.section-text {
+    color: #ff5722;
+    text-indent: 24px;
+    border: 2px dashed #212121;
+}
+
+.page-footer {
+    background-color: #212121;
+    padding: 12px 0;
+    min-height: unset;
+}
+
+.copyright-text {
+    color: #ffffff;
+    flex-basis: 300px;
+}
+
+
+.club-list .title {
+    color: #4caf50;
+
+    line-height: 1.333;
+}
+.club-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+.club-list .text {
+    color: #009688;
+    font-size: 16px;
+    margin: 0 12px 12px;
+}
+
+.club-list .link {
+    color: #ffc107;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: auto 12px 16px;
+
+}
+.benefits {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+.benefits>li {
+    color: #d500f9;
+}
+.benefits .item {
+    background-color: #e1bee7;
+    padding: 12px;
+    border-radius: 8px;
+    flex-basis:  calc((100% - 32px) / 3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+   
+}
+
+.benefits .item:hover {
+    background-color: #ce93d8;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.page-nav .link {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 150ms ease-in-out 0ms,
+        background-color 150ms ease-in-out 150ms;
+    
+}
+
+.page-nav .link:hover, .page-nav .link:focus {
+    color: #15e3e3;
+    background-color: #fff;
+}
+
+.club-list .link:hover, .club-list .link:focus {
+    color: #f57f17;
+    text-decoration: underline;
+}
+.page-nav .link:active {
+    color: #212121;
+}
+
+.club-list .link:active {
+    color: #ff1744;
+}
+.hero-title {
+    font-family: "Georgia", sans-serif;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 1.333;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.hero-title::before,
+.hero-title::after {
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    content: ""
+}
+
+.hero-title:hover::before,
+.hero-title:hover::after {
+    background-color: #03a9f4;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.club-list .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 16px 12px 8px;
+    color: #212121;
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #212121;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.section-text {
+    line-height: 1.5;
+}
+.downloads .link {
+    text-decoration: none;
+    color: #1a010a;
+}
+
+.downloads .link:hover,
+.downloads .link:focus {
+    text-decoration: underline;
+    color: #ff1744;
+}
+.downloads .plan-name {
+    color: #ff1744;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+}
+.club-list .item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 24px);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+        0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+        position: relative;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;   
+}
+.page-container {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-grow: 1;
+}
+footer img {
+    height: 60px;
+    width: auto;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+button:hover {
+    cursor: pointer;
+}
+.social-link {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+.social-links .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #03a9f4;
+}
+
+.social-link:hover {
+    color: #4269e8;
+}
+
+
+.social-item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+        gap: 8px;
+    flex-shrink: 0;
+}
+.footer-social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+}
+.page-footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.downloads {
+    margin-top: 20px;
+}
+.downloads .item {
+    margin-bottom: 8px;
+}
+.downloads .item:last-child {
+    margin-bottom: 0;
+}
+.hero {
+    padding: 48px;
+    border-radius: 12px;
+    background-color: #212121;
+    color: #fff;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.15), rgba(0, 0, 255, 0.15)), url(https://ac.goit.global/fullstack/html-css-v2/module-4/autochecks/m04-human.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.manager-chat-btn {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #03a9f4;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+        rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 999;
+}
